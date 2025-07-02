@@ -1,1 +1,80 @@
-# numpy
+# 📊 Numpy 기초 및 활용 레포트
+
+---ㅇ
+
+## 📚 목차
+
+1. [Numpy 소개 및 설치](#1-numpy-소개-및-설치)
+2. [배열 생성 및 속성](#2-배열-생성-및-속성)
+3. [배열 연산](#3-배열-연산)
+4. [인덱싱 및 조건 필터링](#4-인덱싱-및-조건-필터링)
+5. [배열 구조 변경 및 병합](#5-배열-구조-변경-및-병합)
+6. [통계 및 수학 함수](#6-통계-및-수학-함수)
+
+---
+
+## 1. Numpy 소개 및 설치
+
+- **Numpy란?**  
+  Numpy는 Python에서 고성능 수치 계산을 위한 핵심 라이브러리입니다.  
+  다차원 배열 객체와 배열 기반의 수학 함수 등을 제공합니다.
+
+
+## 2. 배열 생성 및 속성
+  ** 배열 생성 함수**
+<br>import numpy as np
+
+<br>np.array([1, 2, 3])
+<br>np.zeros((2, 3))
+<br>np.ones((3, 3))
+<br>np.arange(0, 10, 2)
+<br>np.linspace(0, 1, 5)
+
+**배열 속성 확인**
+
+
+<br>a = np.array([[1, 2, 3], [4, 5, 6]])
+<br>a.shape       # 배열 형태
+<br>a.ndim        # 차원 수
+<br>a.size        # 전체 요소 수
+<br>a.dtype       # 자료형
+
+## 3. 배열 연산
+<br>np.sqrt(a)
+<br>np.exp(a)
+<br>np.log(a)
+<br>np.sin(a)
+
+## 4. 인덱싱 및 조건 필터링
+**인덱싱과 슬라이싱**
+<br>a[0, 1]
+<br>a[:, 0]
+<br>a[1:3, :]
+
+**조건 필터링**
+<br>a[a > 5]
+<br>a[(a % 2) == 0]
+
+## 5. 배열 구조 변경 및 병합
+**배열 구조 변경**
+<br>a.reshape(3, 2)
+<br>a.ravel()
+<br>a.T  # 전치
+
+**병합과 분할**
+<br>np.hstack((a, b))
+<br>np.vstack((a, b))
+<br>np.split(a, 2)
+
+## 6. 통계 및 수학 함수
+**통계 함수**
+
+<br>np.mean(a)
+<br>np.median(a)
+<br>np.std(a)
+<br>np.var(a)
+<br>np.sum(a)
+<br>np.max(a)
+<br>np.min(a)
+<br>np.argmax(a)
+<br>np.argmin(a)
